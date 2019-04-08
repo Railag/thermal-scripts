@@ -6,9 +6,9 @@
 )
 
 $statusCommand = "nbfc.exe status -a";
-$enable3rdFanCommand = "nbfc.exe set 100 -f 2";
-$disable3rdFanCommand = "nbfc.exe set 0 -f 2";
-$auto3rdFanCommand = "nbfc.exe set auto -f 2";
+$enable3rdFanCommand = "nbfc.exe set -s 100 -f 2";
+$disable3rdFanCommand = "nbfc.exe set -s 0 -f 2";
+$auto3rdFanCommand = "nbfc.exe set -a -f 2";
 
 if ($status)
 {
@@ -27,5 +27,5 @@ elseif ($disable)
 elseif ($auto)
 {
 	iex $auto3rdFanCommand
-	echo "auto mode enabled for 3rd fan."
+	echo "Auto mode enabled for 3rd fan."
 }

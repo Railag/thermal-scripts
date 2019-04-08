@@ -8,6 +8,7 @@
     <File Build="2" Shared="False">3rdfan.ps1</File>
     <File Build="2" Shared="False">intelExtremeTuningCpuVoltageOffset.ps1</File>
     <File Build="2" Shared="False">msiAfterburnerGpuCustomCoreClockCurve.ps1</File>
+    <File Build="2" Shared="False">thermal-optimizations.ps1</File>
   </Files>
   <DeployMode>Project</DeployMode>
   <PrimaryFile></PrimaryFile>
