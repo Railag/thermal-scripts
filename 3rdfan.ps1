@@ -12,17 +12,20 @@ $auto3rdFanCommand = "nbfc.exe set auto -f 2";
 
 if ($status)
 {
-	Invoke-Expression $statusCommand
+	iex $statusCommand
 }
 elseif ($enable)
 {
-	Invoke-Expression $enable3rdFanCommand
+	iex $enable3rdFanCommand
+	echo "3rd fan enabled."
 }
 elseif ($disable)
 {
-	Invoke-Expression $disable3rdFanCommand
+	iex $disable3rdFanCommand
+	echo "3rd fan disabled."
 }
 elseif ($auto)
 {
-	Invoke-Expression $auto3rdFanCommand
+	iex $auto3rdFanCommand
+	echo "auto mode enabled for 3rd fan."
 }
