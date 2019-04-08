@@ -4,7 +4,7 @@
 )
 
 $PATH = [Environment]::GetEnvironmentVariable("PATH")
-if (!$PATH -contains '*MSI Afterburner*')
+if (!$PATH.Contains("MSI Afterburner"))
 {
 	$PATH += "C:\Program Files (x86)\MSI Afterburner;";
 	$ENV:PATH = $PATH;
