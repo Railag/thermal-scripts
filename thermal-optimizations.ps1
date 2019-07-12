@@ -10,7 +10,7 @@ $global:windowsEnergyPath = ".\windows.ps1"
 
 Function OptimizeBasedOnDayAndTime() {
     $currentDay = Get-Date -Format "dddd"
-    if ( ($currentDay -eq 'суббота') -or ($currentDay -eq 'воскресенье') ) {
+    if ( ($currentDay -eq 'Saturday') -or ($currentDay -eq 'Sunday') ) {
         Performance
         return
     }
