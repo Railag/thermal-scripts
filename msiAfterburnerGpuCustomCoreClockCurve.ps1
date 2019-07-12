@@ -18,10 +18,10 @@ $performanceCommand = "MSIAfterburner.exe -Profile5";
 if ($cooling)
 {
 	iex $coolingCommand
-	echo "Cooling profile applied."
+	echo "GPU cooling profile applied."
 }
 elseif ($performance)
 {
 	iex $performanceCommand
-	echo "Performance profile applied."
+	echo "GPU performance profile applied."
 }

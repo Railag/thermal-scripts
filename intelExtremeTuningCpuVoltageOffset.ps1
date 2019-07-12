@@ -21,15 +21,15 @@ $performanceCommand = "XtuCLI.exe -tune -id 34 -v 0"; # TODO test max possible v
 if ($cooling)
 {
 	iex $coolingCommand
-	echo "Cooling profile applied, set core voltage offset to -150mV."
+	echo "CPU cooling profile applied, set core voltage offset to -150mV."
 }
 elseif ($default)
 {
 	iex $defaultCommand
-	echo "Default profile applied, reset core voltage offset to 0mV."
+	echo "CPU default profile applied, reset core voltage offset to 0mV."
 }
 elseif ($performance)
 {
 	iex $performanceCommand
-	echo "Performance profile applied, set core voltage offset to 0mV."
+	echo "CPU performance profile applied, set core voltage offset to 0mV."
 }
