@@ -15,9 +15,6 @@ $2ndFanCommand = $fanCommand + " -f 1"
 $3rdFanCommand = $fanCommand + " -f 2"
 
 $statusCommand = "nbfc.exe status -a";
-$enable3rdFanCommand = "nbfc.exe set -s 100 -f 2";
-$disable3rdFanCommand = "nbfc.exe set -s 0 -f 2";
-$auto3rdFanCommand = "nbfc.exe set -a -f 2";
 
 if ($status)
 {
@@ -47,7 +44,9 @@ elseif ($disable)
 }
 elseif ($auto)
 {
-	iex $fanEnableCommand
+    # Temporary use default fans for cooling mode
+	#iex $fanEnableCommand
+    iex $fanDisableCommand
 	$1stFanCommand += " -a"
 	$2ndFanCommand += " -a"
 	$3rdFanCommand += " -a"
