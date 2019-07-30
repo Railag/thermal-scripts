@@ -8,7 +8,7 @@
 $fanCommand = "nbfc.exe set"
 
 $fanEnableCommand = "nbfc.exe start -e"
-$fanDisableCommand = "nfbc.exe stop"
+$fanDisableCommand = "nbfc.exe stop"
 
 $1stFanCommand = $fanCommand + " -f 0"
 $2ndFanCommand = $fanCommand + " -f 1"
