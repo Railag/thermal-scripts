@@ -25,7 +25,7 @@ elseif ($enable)
 	iex $fanEnableCommand
 	$1stFanCommand += " -s 100"
 	$2ndFanCommand += " -s 100"
-	$3rdFanCommand += " -s 100"
+	$3rdFanCommand += " -s 0" # third small fan, disabled by default
 	iex $1stFanCommand
 	iex $2ndFanCommand
 	iex $3rdFanCommand
